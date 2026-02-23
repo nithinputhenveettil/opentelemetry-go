@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 // Sat Jan 01 2000 00:00:00 GMT+0000.

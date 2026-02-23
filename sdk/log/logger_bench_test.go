@@ -1,19 +1,19 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 
 import (
 	"testing"
 	"time"
 
 	"github.com/stretchr/testify/require"
-
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
 )
 
 func BenchmarkLoggerEmit(b *testing.B) {

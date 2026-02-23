@@ -3,7 +3,7 @@
 
 //go:build windows
 
-package resource // import "go.opentelemetry.io/otel/sdk/resource"
+package resource // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 
 import (
 	"golang.org/x/sys/windows/registry"

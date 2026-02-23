@@ -1,15 +1,15 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package exemplar // import "go.opentelemetry.io/otel/sdk/metric/exemplar"
+package exemplar // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/exemplar"
 
 import (
 	"context"
 	"sync"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 // storage is an exemplar storage for [Reservoir] implementations.

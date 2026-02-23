@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlploghttp // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp"
+package otlploghttp // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploghttp"
 
 import (
 	"bytes"
@@ -23,9 +23,9 @@ import (
 	logpb "go.opentelemetry.io/proto/otlp/logs/v1"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp/internal/observ"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp/internal/retry"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploghttp/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploghttp/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploghttp/internal/retry"
 )
 
 type client struct {

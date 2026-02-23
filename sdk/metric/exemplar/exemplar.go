@@ -1,12 +1,12 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package exemplar // import "go.opentelemetry.io/otel/sdk/metric/exemplar"
+package exemplar // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/exemplar"
 
 import (
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
 )
 
 // Exemplar is a measurement sampled from a timeseries providing a typical

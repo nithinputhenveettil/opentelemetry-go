@@ -11,7 +11,7 @@ import (
 	"github.com/go-logr/logr/funcr"
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
 )
 
 func init() {

@@ -4,7 +4,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package observ // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/observ"
+package observ // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/observ"
 
 import (
 	"errors"

@@ -1,15 +1,15 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opencensus // import "go.opentelemetry.io/otel/bridge/opencensus"
+package opencensus // import "github.com/nithinputhenveettil/opentelemetry-go/bridge/opencensus"
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/trace/noop"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace/noop"
 )
 
 func TestNewTraceConfig(t *testing.T) {

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package stdoutmetric_test // import "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric"
+package stdoutmetric_test // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric"
 
 import (
 	"bytes"
@@ -16,18 +16,18 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric"
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/counter"
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/observ"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/counter"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata/metricdatatest"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
 )
 
 func testEncoderOption() stdoutmetric.Option {
@@ -276,7 +276,7 @@ func TestExporterExportObservability(t *testing.T) {
 
 			expectedMetrics := metricdata.ScopeMetrics{
 				Scope: instrumentation.Scope{
-					Name:      "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/observ",
+					Name:      "github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/observ",
 					Version:   sdk.Version(),
 					SchemaURL: semconv.SchemaURL,
 				},

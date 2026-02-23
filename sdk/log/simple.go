@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 
 import (
 	"context"
 	"sync"
 
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/log/internal/observ"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/sdk/log/internal/observ"
 )
 
 // Compile-time check SimpleProcessor implements Processor.

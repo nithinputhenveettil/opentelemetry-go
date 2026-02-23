@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 
 import (
 	"context"
@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
 )
 
 func TestFixedSizeExemplarConcurrentSafe(t *testing.T) {

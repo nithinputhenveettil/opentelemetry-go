@@ -3,7 +3,7 @@
 
 // Code generated from semantic convention specification. DO NOT EDIT.
 
-package semconv // import "go.opentelemetry.io/otel/semconv/v1.27.0"
+package semconv // import "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.27.0"
 
 const (
 

@@ -9,12 +9,12 @@ import (
 
 	octrace "go.opencensus.io/trace"
 
-	"go.opentelemetry.io/otel/bridge/opencensus/internal"
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/oc2otel"
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/otel2oc"
-	"go.opentelemetry.io/otel/trace"
-	"go.opentelemetry.io/otel/trace/embedded"
-	"go.opentelemetry.io/otel/trace/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/bridge/opencensus/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/bridge/opencensus/internal/oc2otel"
+	"github.com/nithinputhenveettil/opentelemetry-go/bridge/opencensus/internal/otel2oc"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace/noop"
 )
 
 type handler struct{ err error }

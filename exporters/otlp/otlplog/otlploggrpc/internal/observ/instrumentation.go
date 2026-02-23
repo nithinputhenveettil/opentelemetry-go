@@ -3,7 +3,7 @@
 
 // Package observ provides observability metrics for OTLP log exporters.
 // This is an experimental feature controlled by the x.Observability feature flag.
-package observ // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/observ"
+package observ // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/observ"
 
 import (
 	"context"
@@ -15,19 +15,19 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/x"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/metric"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/x"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
 )
 
 const (
 	// ScopeName is the unique name of the meter used for instrumentation.
-	ScopeName = "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/observ"
+	ScopeName = "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/observ"
 
 	// Version is the current version of this instrumentation.
 	//

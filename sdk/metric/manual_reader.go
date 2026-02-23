@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 
 import (
 	"context"
@@ -10,16 +10,16 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/metric/internal/observ"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 )
 
 const (
 	// ManualReaderType uniquely identifies the OpenTelemetry Metric Reader component
 	// being instrumented.
-	manualReaderType = "go.opentelemetry.io/otel/sdk/metric/metric.ManualReader"
+	manualReaderType = "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metric.ManualReader"
 )
 
 // ManualReader is a simple Reader that allows an application to

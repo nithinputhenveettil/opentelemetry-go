@@ -15,9 +15,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
 )
 
 func TestKind(t *testing.T) {

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheus // import "go.opentelemetry.io/otel/exporters/prometheus"
+package prometheus // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/prometheus"
 
 import (
 	"context"
@@ -18,14 +18,14 @@ import (
 	"github.com/prometheus/otlptranslator"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/prometheus/internal/counter"
-	"go.opentelemetry.io/otel/exporters/prometheus/internal/observ"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/resource"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/prometheus/internal/counter"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/prometheus/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 )
 
 const (

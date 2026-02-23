@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/internal/baggage"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/baggage"
 )
 
 // Seed with a static value to ensure deterministic results.

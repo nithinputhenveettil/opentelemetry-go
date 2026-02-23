@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	commonpb "go.opentelemetry.io/proto/otlp/common/v1"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
 )
 
 func TestInstrumentationScope(t *testing.T) {

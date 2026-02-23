@@ -11,15 +11,15 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	collogpb "go.opentelemetry.io/proto/otlp/collector/logs/v1"
 	logpb "go.opentelemetry.io/proto/otlp/logs/v1"
 
-	"go.opentelemetry.io/otel/log"
-	sdklog "go.opentelemetry.io/otel/sdk/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	sdklog "github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 )
 
 var records []sdklog.Record

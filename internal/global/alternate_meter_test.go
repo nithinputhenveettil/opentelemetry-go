@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/nithinputhenveettil/opentelemetry-go/internal/global"
 
 import (
 	"context"
@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/embedded"
-	"go.opentelemetry.io/otel/metric/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/noop"
 )
 
 // Below, an alternate meter provider is constructed specifically to

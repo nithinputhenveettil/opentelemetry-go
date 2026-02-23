@@ -16,10 +16,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/trace/internal/telemetry"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/codes"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace/internal/telemetry"
 )
 
 const tName = "tracer.name"
@@ -233,7 +233,7 @@ func TestTracerConcurrentSafe(t *testing.T) {
 func TestSpanCreation(t *testing.T) {
 	const (
 		spanName   = "span name"
-		tracerName = "go.opentelemetry.io/otel/sdk/test"
+		tracerName = "github.com/nithinputhenveettil/opentelemetry-go/sdk/test"
 		tracerVer  = "v0.1.0"
 	)
 

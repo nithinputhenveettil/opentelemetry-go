@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
 
 import (
 	"context"
@@ -9,17 +9,17 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace/noop"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/sdk/trace/internal/observ"
-	"go.opentelemetry.io/otel/trace"
-	"go.opentelemetry.io/otel/trace/embedded"
-	"go.opentelemetry.io/otel/trace/noop"
 )
 
-const defaultTracerName = "go.opentelemetry.io/otel/sdk/tracer"
+const defaultTracerName = "github.com/nithinputhenveettil/opentelemetry-go/sdk/tracer"
 
 // tracerProviderConfig.
 type tracerProviderConfig struct {

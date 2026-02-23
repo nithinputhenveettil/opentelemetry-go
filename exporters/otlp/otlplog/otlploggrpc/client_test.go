@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlploggrpc // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc"
+package otlploggrpc // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc"
 
 import (
 	"context"
@@ -28,17 +28,17 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/observ"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/log"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata/metricdatatest"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
 )
 
 var (

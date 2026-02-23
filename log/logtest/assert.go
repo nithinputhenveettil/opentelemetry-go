@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package logtest // import "go.opentelemetry.io/otel/log/logtest"
+package logtest // import "github.com/nithinputhenveettil/opentelemetry-go/log/logtest"
 
 import (
 	"context"
@@ -9,7 +9,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"go.opentelemetry.io/otel/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
 )
 
 // TestingT reports failure messages.

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opencensus // import "go.opentelemetry.io/otel/bridge/opencensus"
+package opencensus // import "github.com/nithinputhenveettil/opentelemetry-go/bridge/opencensus"
 
 import (
 	"testing"
@@ -12,10 +12,10 @@ import (
 	"go.opencensus.io/metric/metricproducer"
 	ocresource "go.opencensus.io/resource"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata/metricdatatest"
 )
 
 func TestMetricProducer(t *testing.T) {

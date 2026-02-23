@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"go.opentelemetry.io/otel/trace/internal/telemetry"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace/internal/telemetry"
 )
 
 var (
@@ -146,14 +146,14 @@ var (
 	schema100 = "http://go.opentelemetry.io/schema/v1.0.0"
 
 	scope = &telemetry.Scope{
-		Name:         "go.opentelemetry.io/otel/trace/internal/telemetry/test",
+		Name:         "github.com/nithinputhenveettil/opentelemetry-go/trace/internal/telemetry/test",
 		Version:      "v0.0.1",
 		Attrs:        []telemetry.Attr{telemetry.String("department", "ops")},
 		DroppedAttrs: 1,
 	}
 	pScope = func() pcommon.InstrumentationScope {
 		s := pcommon.NewInstrumentationScope()
-		s.SetName("go.opentelemetry.io/otel/trace/internal/telemetry/test")
+		s.SetName("github.com/nithinputhenveettil/opentelemetry-go/trace/internal/telemetry/test")
 		s.SetVersion("v0.0.1")
 		s.Attributes().PutStr("department", "ops")
 		s.SetDroppedAttributesCount(1)

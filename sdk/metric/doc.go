@@ -17,7 +17,7 @@
 // done by configuring it with a Reader implementation (using the WithReader
 // MeterProviderOption). Readers take two forms: ones that push to an endpoint
 // (NewPeriodicReader), and ones that an endpoint pulls from. See
-// [go.opentelemetry.io/otel/exporters] for exporters that can be used as
+// [github.com/nithinputhenveettil/opentelemetry-go/exporters] for exporters that can be used as
 // or with these Readers.
 //
 // Each Reader, when registered with the MeterProvider, can be augmented with a
@@ -79,9 +79,9 @@
 // in the same batch of metric data as the measurement they are associated
 // with.
 //
-// See [go.opentelemetry.io/otel/metric] for more information about
+// See [github.com/nithinputhenveettil/opentelemetry-go/metric] for more information about
 // the metric API.
 //
-// See [go.opentelemetry.io/otel/sdk/metric/internal/x] for information about
+// See [github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/internal/x] for information about
 // the experimental features.
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"

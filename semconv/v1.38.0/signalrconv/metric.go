@@ -11,9 +11,9 @@ import (
 	"context"
 	"sync"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/noop"
 )
 
 var (
@@ -84,7 +84,7 @@ func NewServerActiveConnections(
 		opt...,
 	)
 	if err != nil {
-	    return ServerActiveConnections{noop.Int64UpDownCounter{}}, err
+		return ServerActiveConnections{noop.Int64UpDownCounter{}}, err
 	}
 	return ServerActiveConnections{i}, nil
 }
@@ -209,7 +209,7 @@ func NewServerConnectionDuration(
 		opt...,
 	)
 	if err != nil {
-	    return ServerConnectionDuration{noop.Float64Histogram{}}, err
+		return ServerConnectionDuration{noop.Float64Histogram{}}, err
 	}
 	return ServerConnectionDuration{i}, nil
 }

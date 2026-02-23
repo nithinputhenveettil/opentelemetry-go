@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package otest provides testing functionliaty for the otlpmetric exporters.
-package otest // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/otest"
+package otest // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/otest"
 
 import (
 	"context"
@@ -17,8 +17,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc/internal"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlpmetric/otlpmetricgrpc/internal"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
 	collpb "go.opentelemetry.io/proto/otlp/collector/metrics/v1"
 	cpb "go.opentelemetry.io/proto/otlp/common/v1"
 	mpb "go.opentelemetry.io/proto/otlp/metrics/v1"

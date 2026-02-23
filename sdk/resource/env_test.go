@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/attribute"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
 )
 
 func TestDetectOnePair(t *testing.T) {

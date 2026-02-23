@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package internal provides common semconv functionality.
-package internal // import "go.opentelemetry.io/otel/semconv/internal"
+package internal // import "github.com/nithinputhenveettil/opentelemetry-go/semconv/internal"
 
 import (
 	"fmt"
@@ -11,9 +11,9 @@ import (
 	"strconv"
 	"strings"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/codes"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 // SemanticConventions are the semantic convention values defined for a

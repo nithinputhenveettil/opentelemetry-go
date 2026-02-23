@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
 
 import (
 	"slices"
 	"sync"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
 )
 
 // evictedQueue is a FIFO queue with a configurable capacity.

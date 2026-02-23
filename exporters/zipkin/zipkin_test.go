@@ -22,12 +22,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/sdk/resource"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/codes"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
+	sdktrace "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/tracetest"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 func TestNewRawExporter(t *testing.T) {

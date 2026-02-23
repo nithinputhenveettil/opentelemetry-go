@@ -4,8 +4,8 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-// Package x documents experimental features for [go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc].
-package x // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/x"
+// Package x documents experimental features for [github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc].
+package x // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/x"
 
 import (
 	"os"

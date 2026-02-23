@@ -17,7 +17,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"go.opentelemetry.io/otel/propagation"
+	"github.com/nithinputhenveettil/opentelemetry-go/propagation"
 )
 
 type testGRPCServer struct{}

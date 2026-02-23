@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 
 import (
 	"runtime"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/metric/exemplar"
-	"go.opentelemetry.io/otel/sdk/metric/internal/aggregate"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/exemplar"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/internal/aggregate"
 )
 
 // ExemplarReservoirProviderSelector selects the

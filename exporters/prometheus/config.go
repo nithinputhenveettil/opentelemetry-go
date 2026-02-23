@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheus // import "go.opentelemetry.io/otel/exporters/prometheus"
+package prometheus // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/prometheus"
 
 import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/otlptranslator"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 )
 
 // config contains options for the exporter.

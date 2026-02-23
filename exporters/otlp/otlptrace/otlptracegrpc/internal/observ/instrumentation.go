@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package observ // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/observ"
+package observ // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/observ"
 
 import (
 	"context"
@@ -12,19 +12,19 @@ import (
 
 	"google.golang.org/grpc/codes"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/x"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/metric"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/x"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
 )
 
 const (
 	// ScopeName is the unique name of the meter used for instrumentation.
-	ScopeName = "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/observ"
+	ScopeName = "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/observ"
 
 	// SchemaURL is the schema URL of the metrics produced by this
 	// instrumentation.

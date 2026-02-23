@@ -10,16 +10,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/observ"
-	"go.opentelemetry.io/otel/metric/noop"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	sdkmetric "go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	sdkmetric "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata/metricdatatest"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
 )
 
 type testSetup struct {
@@ -34,7 +34,7 @@ func setupTestMeterProvider(t *testing.T) *testSetup {
 	// drop metric reader metrics as we are only testing for stdoutmetric exporter
 	dropReaderMetrics := sdkmetric.NewView(
 		sdkmetric.Instrument{
-			Scope: instrumentation.Scope{Name: "go.opentelemetry.io/otel/sdk/metric/internal/observ"},
+			Scope: instrumentation.Scope{Name: "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/internal/observ"},
 		},
 		sdkmetric.Stream{Aggregation: sdkmetric.AggregationDrop{}},
 	)

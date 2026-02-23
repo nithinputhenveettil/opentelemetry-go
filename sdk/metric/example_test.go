@@ -9,18 +9,18 @@ import (
 	"log"
 	"regexp"
 
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/exemplar"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/exemplar"
-	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
 )
 
 // To enable metrics in your application using the SDK,
 // you'll need to have an initialized [MeterProvider]
-// that will let you create a [go.opentelemetry.io/otel/metric.Meter].
+// that will let you create a [github.com/nithinputhenveettil/opentelemetry-go/metric.Meter].
 //
 // Here's how you might initialize a metrics provider.
 func Example() {
@@ -35,7 +35,7 @@ func Example() {
 	}
 
 	// This reader is used as a stand-in for a reader that will actually export
-	// data. See https://pkg.go.dev/go.opentelemetry.io/otel/exporters for
+	// data. See https://pkg.go.dev/github.com/nithinputhenveettil/opentelemetry-go/exporters for
 	// exporters that can be used as or with readers.
 	reader := metric.NewManualReader()
 

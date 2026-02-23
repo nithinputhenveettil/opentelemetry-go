@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 )
 
 var (

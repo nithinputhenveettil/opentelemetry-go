@@ -11,9 +11,9 @@ import (
 	"context"
 	"sync"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/noop"
 )
 
 var (

@@ -1,11 +1,11 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otel // import "go.opentelemetry.io/otel"
+package otel // import "github.com/nithinputhenveettil/opentelemetry-go"
 
 import (
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/propagation"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/propagation"
 )
 
 // GetTextMapPropagator returns the global TextMapPropagator. If none has been

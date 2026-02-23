@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 
 import (
 	"context"
@@ -15,13 +15,13 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/noop"
-	"go.opentelemetry.io/otel/sdk/resource"
+
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 )
 
 const envVarResourceAttributes = "OTEL_RESOURCE_ATTRIBUTES"

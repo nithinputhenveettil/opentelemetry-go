@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlptracegrpc // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
+package otlptracegrpc // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc"
 
 import (
 	"context"
@@ -17,12 +17,12 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/counter"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/observ"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/otlpconfig"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/retry"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/counter"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/otlpconfig"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/retry"
 )
 
 type client struct {

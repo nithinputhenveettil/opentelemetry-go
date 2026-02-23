@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package attribute // import "go.opentelemetry.io/otel/attribute"
+package attribute // import "github.com/nithinputhenveettil/opentelemetry-go/attribute"
 
 import (
 	"cmp"
@@ -10,7 +10,7 @@ import (
 	"slices"
 	"sort"
 
-	"go.opentelemetry.io/otel/attribute/internal/xxhash"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute/internal/xxhash"
 )
 
 type (

@@ -19,19 +19,19 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/sdk/trace/internal/observ"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
-	"go.opentelemetry.io/otel/trace"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/codes"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata/metricdatatest"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/internal/observ"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 const envVarResourceAttributes = "OTEL_RESOURCE_ATTRIBUTES"
@@ -1231,7 +1231,7 @@ func TestRecordError(t *testing.T) {
 	}{
 		{
 			err: newTestError("test error"),
-			typ: "go.opentelemetry.io/otel/sdk/trace.testError",
+			typ: "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.testError",
 			msg: "test error",
 		},
 		{
@@ -1283,7 +1283,7 @@ func TestRecordError(t *testing.T) {
 
 func TestRecordErrorWithStackTrace(t *testing.T) {
 	err := newTestError("test error")
-	typ := "go.opentelemetry.io/otel/sdk/trace.testError"
+	typ := "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.testError"
 	msg := "test error"
 
 	te := NewTestExporter()
@@ -1331,17 +1331,17 @@ func TestRecordErrorWithStackTrace(t *testing.T) {
 
 	assert.Truef(
 		t,
-		strings.HasPrefix(gotStackTraceFunctionName[1], "go.opentelemetry.io/otel/sdk/trace.recordStackTrace"),
-		"%q not prefixed with go.opentelemetry.io/otel/sdk/trace.recordStackTrace",
+		strings.HasPrefix(gotStackTraceFunctionName[1], "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.recordStackTrace"),
+		"%q not prefixed with github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.recordStackTrace",
 		gotStackTraceFunctionName[1],
 	)
 	assert.Truef(
 		t,
 		strings.HasPrefix(
 			gotStackTraceFunctionName[3],
-			"go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).RecordError",
+			"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.(*recordingSpan).RecordError",
 		),
-		"%q not prefixed with go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).RecordError",
+		"%q not prefixed with github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.(*recordingSpan).RecordError",
 		gotStackTraceFunctionName[3],
 	)
 }
@@ -1591,14 +1591,14 @@ func TestSpanCapturesPanicWithStackTrace(t *testing.T) {
 	gotStackTraceFunctionName := strings.Split(spans[0].Events()[0].Attributes[2].Value.AsString(), "\n")
 	assert.Truef(
 		t,
-		strings.HasPrefix(gotStackTraceFunctionName[1], "go.opentelemetry.io/otel/sdk/trace.recordStackTrace"),
-		"%q not prefixed with go.opentelemetry.io/otel/sdk/trace.recordStackTrace",
+		strings.HasPrefix(gotStackTraceFunctionName[1], "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.recordStackTrace"),
+		"%q not prefixed with github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.recordStackTrace",
 		gotStackTraceFunctionName[1],
 	)
 	assert.Truef(
 		t,
-		strings.HasPrefix(gotStackTraceFunctionName[3], "go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).End"),
-		"%q not prefixed with go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).End",
+		strings.HasPrefix(gotStackTraceFunctionName[3], "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.(*recordingSpan).End"),
+		"%q not prefixed with github.com/nithinputhenveettil/opentelemetry-go/sdk/trace.(*recordingSpan).End",
 		gotStackTraceFunctionName[3],
 	)
 }

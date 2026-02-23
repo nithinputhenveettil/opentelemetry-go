@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 
 import (
 	"context"
@@ -12,20 +12,20 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	sdkmetric "go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
-	"go.opentelemetry.io/otel/trace"
+
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	sdkmetric "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata/metricdatatest"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 func TestLoggerEmit(t *testing.T) {
@@ -449,7 +449,7 @@ func TestLoggerObservability(t *testing.T) {
 			require.Len(t, gotMetrics.ScopeMetrics, 1)
 			sm := gotMetrics.ScopeMetrics[0]
 			assert.Equal(t, instrumentation.Scope{
-				Name:      "go.opentelemetry.io/otel/sdk/log",
+				Name:      "github.com/nithinputhenveettil/opentelemetry-go/sdk/log",
 				Version:   sdk.Version(),
 				SchemaURL: semconv.SchemaURL,
 			}, sm.Scope)

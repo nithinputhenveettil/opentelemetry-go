@@ -10,10 +10,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/embedded"
-	"go.opentelemetry.io/otel/log/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/noop"
 )
 
 func TestLoggerProviderConcurrentSafe(*testing.T) {

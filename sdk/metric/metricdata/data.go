@@ -2,15 +2,15 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package metricdata provides types for the metric SDK data model.
-package metricdata // import "go.opentelemetry.io/otel/sdk/metric/metricdata"
+package metricdata // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/metricdata"
 
 import (
 	"encoding/json"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 )
 
 // ResourceMetrics is a collection of ScopeMetrics and the associated Resource

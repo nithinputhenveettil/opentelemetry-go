@@ -8,12 +8,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric/noop"
-	"go.opentelemetry.io/otel/sdk/trace/internal/observ"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
+
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/internal/observ"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
 )
 
 const sspComponentID = 0

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlploggrpc // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc"
+package otlploggrpc // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc"
 
 import (
 	"context"
@@ -21,9 +21,9 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/observ"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/retry"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/observ"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/retry"
 )
 
 // The methods of this type are not expected to be called concurrently.

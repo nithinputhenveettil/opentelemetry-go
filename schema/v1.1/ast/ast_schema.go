@@ -3,11 +3,11 @@
 
 // Package ast provides abstract syntax tree parsing for the OpenTelemetry
 // schema.
-package ast // import "go.opentelemetry.io/otel/schema/v1.1/ast"
+package ast // import "github.com/nithinputhenveettil/opentelemetry-go/schema/v1.1/ast"
 
 import (
-	ast10 "go.opentelemetry.io/otel/schema/v1.0/ast"
-	"go.opentelemetry.io/otel/schema/v1.1/types"
+	ast10 "github.com/nithinputhenveettil/opentelemetry-go/schema/v1.0/ast"
+	"github.com/nithinputhenveettil/opentelemetry-go/schema/v1.1/types"
 )
 
 // Schema represents a Schema file in FileFormat 1.1.0 as defined in

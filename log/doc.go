@@ -5,7 +5,7 @@
 Package log provides the OpenTelemetry Logs API.
 
 This API is separate from its implementation so the instrumentation built from
-it is reusable. See [go.opentelemetry.io/otel/sdk/log] for the official
+it is reusable. See [github.com/nithinputhenveettil/opentelemetry-go/sdk/log] for the official
 OpenTelemetry implementation of this API.
 
 The log package provides the OpenTelemetry Logs API, which serves as a standard
@@ -36,13 +36,13 @@ make:
   - Default to another implementation
 
 All interfaces in this API embed a corresponding interface from
-[go.opentelemetry.io/otel/log/embedded]. If an author wants the default
+[github.com/nithinputhenveettil/opentelemetry-go/log/embedded]. If an author wants the default
 behavior of their implementations to be a compilation failure, signaling to
 their users they need to update to the latest version of that implementation,
 they need to embed the corresponding interface from
-[go.opentelemetry.io/otel/log/embedded] in their implementation. For example,
+[github.com/nithinputhenveettil/opentelemetry-go/log/embedded] in their implementation. For example,
 
-	import "go.opentelemetry.io/otel/log/embedded"
+	import "github.com/nithinputhenveettil/opentelemetry-go/log/embedded"
 
 	type LoggerProvider struct {
 		embedded.LoggerProvider
@@ -52,7 +52,7 @@ they need to embed the corresponding interface from
 If an author wants the default behavior of their implementations to a panic,
 they need to embed the API interface directly.
 
-	import "go.opentelemetry.io/otel/log"
+	import "github.com/nithinputhenveettil/opentelemetry-go/log"
 
 	type LoggerProvider struct {
 		log.LoggerProvider
@@ -61,14 +61,14 @@ they need to embed the API interface directly.
 
 This is not a recommended behavior as it could lead to publishing packages that
 contain runtime panics when users update other package that use newer versions
-of [go.opentelemetry.io/otel/log].
+of [github.com/nithinputhenveettil/opentelemetry-go/log].
 
 Finally, an author can embed another implementation in theirs. The embedded
 implementation will be used for methods not defined by the author. For example,
 an author who wants to default to silently dropping the call can use
-[go.opentelemetry.io/otel/log/noop]:
+[github.com/nithinputhenveettil/opentelemetry-go/log/noop]:
 
-	import "go.opentelemetry.io/otel/log/noop"
+	import "github.com/nithinputhenveettil/opentelemetry-go/log/noop"
 
 	type LoggerProvider struct {
 		noop.LoggerProvider
@@ -76,10 +76,10 @@ an author who wants to default to silently dropping the call can use
 	}
 
 It is strongly recommended that authors only embed
-go.opentelemetry.io/otel/log/noop if they choose this default behavior. That
+github.com/nithinputhenveettil/opentelemetry-go/log/noop if they choose this default behavior. That
 implementation is the only one OpenTelemetry authors can guarantee will fully
 implement all the API interfaces when a user updates their API.
 
 [registry]: https://opentelemetry.io/ecosystem/registry/?language=go&component=log-bridge
 */
-package log // import "go.opentelemetry.io/otel/log"
+package log // import "github.com/nithinputhenveettil/opentelemetry-go/log"

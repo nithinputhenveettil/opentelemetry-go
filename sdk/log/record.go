@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 
 import (
 	"slices"
@@ -10,11 +10,11 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 // attributesInlineCount is the number of attributes that are efficiently
@@ -81,7 +81,7 @@ func putSeen(seen map[string]struct{}) {
 // A log record with non-empty event name is interpreted as an event record.
 //
 // Do not create instances of Record on your own in production code.
-// You can use [go.opentelemetry.io/otel/sdk/log/logtest.RecordFactory]
+// You can use [github.com/nithinputhenveettil/opentelemetry-go/sdk/log/logtest.RecordFactory]
 // for testing purposes.
 type Record struct {
 	// Do not embed the log.Record. Attributes need to be overwrite-able and

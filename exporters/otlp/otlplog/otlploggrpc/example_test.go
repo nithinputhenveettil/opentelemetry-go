@@ -6,9 +6,9 @@ package otlploggrpc_test
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc"
-	"go.opentelemetry.io/otel/log/global"
-	"go.opentelemetry.io/otel/sdk/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 )
 
 func Example() {

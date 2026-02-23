@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 
 import (
 	"context"
@@ -9,13 +9,13 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/embedded"
-	"go.opentelemetry.io/otel/log/noop"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
 )
 
 const (
@@ -183,7 +183,7 @@ func (fn loggerProviderOptionFunc) apply(c providerConfig) providerConfig {
 // the LoggerProvider will create.
 //
 // By default, if this Option is not used, the default Resource from the
-// go.opentelemetry.io/otel/sdk/resource package will be used.
+// github.com/nithinputhenveettil/opentelemetry-go/sdk/resource package will be used.
 func WithResource(res *resource.Resource) LoggerProviderOption {
 	return loggerProviderOptionFunc(func(cfg providerConfig) providerConfig {
 		var err error

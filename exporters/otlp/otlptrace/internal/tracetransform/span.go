@@ -1,18 +1,18 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tracetransform // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/tracetransform"
+package tracetransform // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/internal/tracetransform"
 
 import (
 	"math"
 
 	tracepb "go.opentelemetry.io/proto/otlp/trace/v1"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/codes"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	tracesdk "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 // Spans transforms a slice of OpenTelemetry spans into a slice of OTLP

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 
 import (
 	"context"
@@ -11,9 +11,9 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/exemplar"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/sdk/metric/exemplar"
-	"go.opentelemetry.io/otel/sdk/resource"
 )
 
 // config contains configuration options for a MeterProvider.
@@ -104,7 +104,7 @@ func (o optionFunc) apply(conf config) config {
 // the MeterProvider will create.
 //
 // By default, if this Option is not used, the default Resource from the
-// go.opentelemetry.io/otel/sdk/resource package will be used.
+// github.com/nithinputhenveettil/opentelemetry-go/sdk/resource package will be used.
 func WithResource(res *resource.Resource) Option {
 	return optionFunc(func(conf config) config {
 		var err error

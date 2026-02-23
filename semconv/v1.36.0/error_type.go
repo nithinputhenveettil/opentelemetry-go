@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package semconv // import "go.opentelemetry.io/otel/semconv/v1.36.0"
+package semconv // import "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.36.0"
 
 import (
 	"fmt"
 	"reflect"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
 )
 
 // ErrorType returns an [attribute.KeyValue] identifying the error type of err.

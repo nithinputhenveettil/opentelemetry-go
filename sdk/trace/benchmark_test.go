@@ -12,11 +12,11 @@ import (
 	"github.com/go-logr/logr"
 	"github.com/go-logr/logr/funcr"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/internal/global"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	sdktrace "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/tracetest"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 func benchmarkSpanLimits(b *testing.B, limits sdktrace.SpanLimits) {

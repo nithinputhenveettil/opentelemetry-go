@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
 )
 
 func TestNewFixedSizeReservoir(t *testing.T) {

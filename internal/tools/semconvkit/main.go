@@ -21,7 +21,7 @@ import (
 
 	"github.com/Masterminds/semver"
 
-	"go.opentelemetry.io/otel/internal/tools/semconvkit/decls"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/tools/semconvkit/decls"
 )
 
 var (

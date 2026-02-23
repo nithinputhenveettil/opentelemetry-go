@@ -3,16 +3,16 @@
 
 // Package global is the internal implementation of the OpenTelemetry global
 // Logs API.
-package global // import "go.opentelemetry.io/otel/log/internal/global"
+package global // import "github.com/nithinputhenveettil/opentelemetry-go/log/internal/global"
 
 import (
 	"context"
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/embedded"
 )
 
 // instLib defines the instrumentation library a logger is created for.

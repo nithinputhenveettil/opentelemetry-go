@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/logtest"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log/logtest"
 )
 
 func Example() {

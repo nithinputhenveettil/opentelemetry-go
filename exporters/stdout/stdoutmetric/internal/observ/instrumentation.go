@@ -3,7 +3,7 @@
 
 // Package observ provides observability for stdout metric exporter.
 // This is an experimental feature controlled by the x.Observability feature flag.
-package observ // import "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/observ"
+package observ // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/observ"
 
 import (
 	"context"
@@ -12,22 +12,22 @@ import (
 	"sync"
 	"time"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal"
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/x"
-	"go.opentelemetry.io/otel/metric"
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/x"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
 )
 
 const (
-	scope = "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/observ"
+	scope = "github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/observ"
 
 	// ComponentType is a name identifying the type of the OpenTelemetry
 	// component. It is not a standardized OTel component type, so it uses the
 	// Go package prefixed type name to ensure uniqueness and identity.
-	ComponentType = "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric.exporter"
+	ComponentType = "github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric.exporter"
 
 	// Version is the current version of this instrumentation.
 	//

@@ -16,7 +16,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/otlptracetest"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/otlptracetest"
 )
 
 func makeMockCollector(t testing.TB, mockConfig *mockConfig) *mockCollector {

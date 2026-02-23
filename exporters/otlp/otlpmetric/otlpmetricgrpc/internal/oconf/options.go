@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package oconf provides configuration for the otlpmetric exporters.
-package oconf // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/oconf"
+package oconf // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/oconf"
 
 import (
 	"crypto/tls"
@@ -22,9 +22,9 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/encoding/gzip"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/retry"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/retry"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 )
 
 const (

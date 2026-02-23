@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package aggregate // import "go.opentelemetry.io/otel/sdk/metric/internal/aggregate"
+package aggregate // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/internal/aggregate"
 
 import (
 	"math"
@@ -9,7 +9,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
 )
 
 // atomicCounter is an efficient way of adding to a number which is either an

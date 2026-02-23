@@ -4,18 +4,18 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlptracetest // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/otlptracetest"
+package otlptracetest // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/otlptracetest"
 
 import (
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/codes"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
+	tracesdk "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/tracetest"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 // SingleReadOnlySpan returns a one-element slice with a read-only span. It

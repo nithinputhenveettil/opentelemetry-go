@@ -22,8 +22,8 @@ import (
 	tracepb "go.opentelemetry.io/proto/otlp/trace/v1"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/otlpconfig"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/otlptracetest"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/otlpconfig"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/otlptracetest"
 )
 
 type mockCollector struct {

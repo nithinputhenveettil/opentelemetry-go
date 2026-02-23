@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package attribute // import "go.opentelemetry.io/otel/attribute"
+package attribute // import "github.com/nithinputhenveettil/opentelemetry-go/attribute"
 
 import (
 	"fmt"
 	"reflect"
 
-	"go.opentelemetry.io/otel/attribute/internal/xxhash"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute/internal/xxhash"
 )
 
 // Type identifiers. These identifiers are hashed before the value of the

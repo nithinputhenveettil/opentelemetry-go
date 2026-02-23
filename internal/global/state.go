@@ -1,16 +1,16 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/nithinputhenveettil/opentelemetry-go/internal/global"
 
 import (
 	"errors"
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/propagation"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/propagation"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 )
 
 type (

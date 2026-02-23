@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package x // import "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric/internal/x"
+package x // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/stdout/stdoutmetric/internal/x"
 
 import "strings"
 

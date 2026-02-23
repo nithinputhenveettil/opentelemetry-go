@@ -1,9 +1,9 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/trace"
+package trace // import "github.com/nithinputhenveettil/opentelemetry-go/trace"
 
-import "go.opentelemetry.io/otel/trace/embedded"
+import "github.com/nithinputhenveettil/opentelemetry-go/trace/embedded"
 
 // TracerProvider provides Tracers that are used by instrumentation code to
 // trace computational workflows.
@@ -17,7 +17,7 @@ import "go.opentelemetry.io/otel/trace/embedded"
 //
 // Commonly, instrumentation code will accept a TracerProvider implementation
 // at runtime from its users or it can simply use the globally registered one
-// (see https://pkg.go.dev/go.opentelemetry.io/otel#GetTracerProvider).
+// (see https://pkg.go.dev/github.com/nithinputhenveettil/opentelemetry-go#GetTracerProvider).
 //
 // Warning: Methods may be added to this interface in minor releases. See
 // package documentation on API implementation for information on how to set

@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package semconv // import "go.opentelemetry.io/otel/semconv/v1.39.0"
+package semconv // import "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
 
 import (
 	"errors"
 	"testing"
 )
 
-const pkg = "go.opentelemetry.io/otel/semconv/v1.39.0"
+const pkg = "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
 
 func TestErrorType(t *testing.T) {
 	check(t, nil, ErrorTypeOther.Value.AsString())

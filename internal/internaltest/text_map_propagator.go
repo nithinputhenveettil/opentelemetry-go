@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package internaltest // import "go.opentelemetry.io/otel/internal/internaltest"
+package internaltest // import "github.com/nithinputhenveettil/opentelemetry-go/internal/internaltest"
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"go.opentelemetry.io/otel/propagation"
+	"github.com/nithinputhenveettil/opentelemetry-go/propagation"
 )
 
 type ctxKeyType string

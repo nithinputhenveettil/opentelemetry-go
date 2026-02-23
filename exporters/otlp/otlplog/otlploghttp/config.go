@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlploghttp // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp"
+package otlploghttp // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploghttp"
 
 import (
 	"crypto/tls"
@@ -16,9 +16,9 @@ import (
 	"time"
 	"unicode"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp/internal/retry"
-	"go.opentelemetry.io/otel/internal/global"
+	otel "github.com/nithinputhenveettil/opentelemetry-go"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploghttp/internal/retry"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
 )
 
 // Default values.

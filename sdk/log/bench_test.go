@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
 )
 
 type mockDelayExporter struct{}

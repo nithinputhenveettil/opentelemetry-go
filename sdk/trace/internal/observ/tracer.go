@@ -1,20 +1,20 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package observ // import "go.opentelemetry.io/otel/sdk/trace/internal/observ"
+package observ // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/internal/observ"
 
 import (
 	"context"
 	"errors"
 	"fmt"
 
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/internal/x"
+	"github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0/otelconv"
+	"github.com/nithinputhenveettil/opentelemetry-go/trace"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/internal/x"
-	"go.opentelemetry.io/otel/semconv/v1.39.0/otelconv"
-	"go.opentelemetry.io/otel/trace"
 )
 
 var meterOpts = []metric.MeterOption{

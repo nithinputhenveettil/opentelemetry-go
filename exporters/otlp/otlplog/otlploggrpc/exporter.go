@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlploggrpc // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc"
+package otlploggrpc // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc"
 
 import (
 	"context"
@@ -10,8 +10,8 @@ import (
 
 	logpb "go.opentelemetry.io/proto/otlp/logs/v1"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/transform"
-	"go.opentelemetry.io/otel/sdk/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/transform"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/log"
 )
 
 type logClient interface {

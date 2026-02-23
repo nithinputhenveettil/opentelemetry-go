@@ -7,14 +7,14 @@ import "testing"
 
 func TestScopeEncoding(t *testing.T) {
 	scope := &Scope{
-		Name:         "go.opentelemetry.io/otel/trace/internal/telemetry/test",
+		Name:         "github.com/nithinputhenveettil/opentelemetry-go/trace/internal/telemetry/test",
 		Version:      "v0.0.1",
 		Attrs:        []Attr{String("department", "ops")},
 		DroppedAttrs: 1,
 	}
 
 	t.Run("CamelCase", runJSONEncodingTests(scope, []byte(`{
-		"name": "go.opentelemetry.io/otel/trace/internal/telemetry/test",
+		"name": "github.com/nithinputhenveettil/opentelemetry-go/trace/internal/telemetry/test",
 		"version": "v0.0.1",
 		"attributes": [
 			{
@@ -28,7 +28,7 @@ func TestScopeEncoding(t *testing.T) {
 	}`)))
 
 	t.Run("SnakeCase/Unmarshal", runJSONUnmarshalTest(scope, []byte(`{
-		"name": "go.opentelemetry.io/otel/trace/internal/telemetry/test",
+		"name": "github.com/nithinputhenveettil/opentelemetry-go/trace/internal/telemetry/test",
 		"version": "v0.0.1",
 		"attributes": [
 			{

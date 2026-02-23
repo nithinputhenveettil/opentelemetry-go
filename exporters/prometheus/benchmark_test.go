@@ -10,7 +10,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/sdk/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 )
 
 func run(n int) func(b *testing.B) {

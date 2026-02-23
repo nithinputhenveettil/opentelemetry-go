@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	tracepb "go.opentelemetry.io/proto/otlp/trace/v1"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
+	"github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/tracetest"
 )
 
 type client struct {

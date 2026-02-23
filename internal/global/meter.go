@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/nithinputhenveettil/opentelemetry-go/internal/global"
 
 import (
 	"container/list"
@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"sync"
 
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/embedded"
 )
 
 // meterProvider is a placeholder for a configured SDK MeterProvider.

@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/trace"
+package trace // import "github.com/nithinputhenveettil/opentelemetry-go/trace"
 
 import (
 	"slices"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
 )
 
 // TracerConfig is a group of options for a Tracer.

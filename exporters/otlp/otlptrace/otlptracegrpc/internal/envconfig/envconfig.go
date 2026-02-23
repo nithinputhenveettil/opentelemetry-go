@@ -6,7 +6,7 @@
 
 // Package envconfig provides functionality to parse configuration from
 // environment variables.
-package envconfig // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc/internal/envconfig"
+package envconfig // import "github.com/nithinputhenveettil/opentelemetry-go/exporters/otlp/otlptrace/otlptracegrpc/internal/envconfig"
 
 import (
 	"crypto/tls"
@@ -19,7 +19,7 @@ import (
 	"time"
 	"unicode"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/nithinputhenveettil/opentelemetry-go/internal/global"
 )
 
 // ConfigFn is the generic function used to set a config.

@@ -3,7 +3,7 @@
 
 //go:generate stringer -type=InstrumentKind -trimprefix=InstrumentKind
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/metric"
 
 import (
 	"context"
@@ -11,11 +11,11 @@ import (
 	"fmt"
 	"strings"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/embedded"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric/internal/aggregate"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/embedded"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/instrumentation"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/internal/aggregate"
 )
 
 var zeroScope instrumentation.Scope
@@ -141,11 +141,11 @@ type Stream struct {
 	// the attribute will not be recorded, otherwise, if it returns true, it
 	// will record the attribute.
 	//
-	// Use NewAllowKeysFilter from "go.opentelemetry.io/otel/attribute" to
+	// Use NewAllowKeysFilter from "github.com/nithinputhenveettil/opentelemetry-go/attribute" to
 	// provide an allow-list of attribute keys here.
 	AttributeFilter attribute.Filter
 	// ExemplarReservoirProvider selects the
-	// [go.opentelemetry.io/otel/sdk/metric/exemplar.ReservoirProvider] based
+	// [github.com/nithinputhenveettil/opentelemetry-go/sdk/metric/exemplar.ReservoirProvider] based
 	// on the [Aggregation].
 	//
 	// If unspecified, [DefaultExemplarReservoirProviderSelector] is used.

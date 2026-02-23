@@ -1,9 +1,9 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
 
-import "go.opentelemetry.io/otel/sdk/trace/internal/env"
+import "github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/internal/env"
 
 const (
 	// DefaultAttributeValueLengthLimit is the default maximum allowed

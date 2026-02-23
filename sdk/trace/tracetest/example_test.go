@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace"
+	"github.com/nithinputhenveettil/opentelemetry-go/sdk/trace/tracetest"
 )
 
 func ExampleSpanRecorder() {

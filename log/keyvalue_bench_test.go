@@ -6,8 +6,8 @@ package log_test
 import (
 	"testing"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/log"
 )
 
 // Store results in a file scope var to ensure compiler does not optimize the

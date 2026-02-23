@@ -11,9 +11,9 @@ import (
 	"context"
 	"sync"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/noop"
+	"github.com/nithinputhenveettil/opentelemetry-go/attribute"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric"
+	"github.com/nithinputhenveettil/opentelemetry-go/metric/noop"
 )
 
 var (
@@ -86,7 +86,7 @@ func NewCosmosDBClientActiveInstanceCount(
 		opt...,
 	)
 	if err != nil {
-	    return CosmosDBClientActiveInstanceCount{noop.Int64UpDownCounter{}}, err
+		return CosmosDBClientActiveInstanceCount{noop.Int64UpDownCounter{}}, err
 	}
 	return CosmosDBClientActiveInstanceCount{i}, nil
 }
@@ -206,7 +206,7 @@ func NewCosmosDBClientOperationRequestCharge(
 		opt...,
 	)
 	if err != nil {
-	    return CosmosDBClientOperationRequestCharge{noop.Int64Histogram{}}, err
+		return CosmosDBClientOperationRequestCharge{noop.Int64Histogram{}}, err
 	}
 	return CosmosDBClientOperationRequestCharge{i}, nil
 }

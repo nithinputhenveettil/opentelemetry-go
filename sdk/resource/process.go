@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package resource // import "go.opentelemetry.io/otel/sdk/resource"
+package resource // import "github.com/nithinputhenveettil/opentelemetry-go/sdk/resource"
 
 import (
 	"context"
@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
+	semconv "github.com/nithinputhenveettil/opentelemetry-go/semconv/v1.39.0"
 )
 
 type (
