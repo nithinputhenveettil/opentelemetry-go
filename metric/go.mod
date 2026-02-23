@@ -3,6 +3,7 @@ module github.com/nithinputhenveettil/opentelemetry-go/metric
 go 1.24.0
 
 require (
+	github.com/nithinputhenveettil/opentelemetry-go v0.0.0-20260223171521-649579c13065
 	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/otel v1.40.0
 )
